@@ -41,9 +41,15 @@ if triggered && (ds_list_empty(enemyLst)) && timer>4{
 	timer = 0
 }
 
-if (!triggered&&!interwaveEventHappened){
-	interwaveEventHappened = true;
-	createPowerUpButton("123",1,window_get_width()/2, window_get_height()/2,0)
+if (!triggered){
+	if (!interwaveEventHappened){
+		interwaveEventHappened = true;
+		buttons = [0,0,0,0,0]
+		for (i =0;i<4;++i){
+			var _attributeIndex = irandom_range(0,3);
+			buttons[i] = createPowerUpButton( obj_turrent.attributeName[_attributeIndex],1,window_get_width()/2-275+i*150, window_get_height()/2,_attributeIndex);
+		}
+	}	
 }
 
 if (!triggered&&keyboard_check(vk_space)) {

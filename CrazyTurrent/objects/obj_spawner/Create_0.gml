@@ -25,11 +25,11 @@ for (i=0;i<10;++i){
 
 //spawn points setting
 spawn[0,0] = 50;
-spawn[0,1] = 50;
+spawn[0,1] = 400;
 spawn[1,0] = 100;
-spawn[1,1] = 100;
+spawn[1,1] = 900;
 spawn[2,0] = 200;
-spawn[2,1] = 200;
+spawn[2,1] = 600;
 
 //currBGM=-1;
 enemyLst = ds_list_create();

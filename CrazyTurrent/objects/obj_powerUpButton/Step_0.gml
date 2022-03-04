@@ -3,7 +3,6 @@
 if (click){
 	switch (attributeIndex){
 		case 0:
-			show_debug_message("case 0 detected!")
 			obj_turrent.damage +=5;
 		break;
 		case 1:
@@ -23,6 +22,5 @@ if (click){
 				throw("Skill Index Out Of Bound!");
 			}
 	}
-	show_debug_message("destroyed")
 	instance_destroy();
 }
