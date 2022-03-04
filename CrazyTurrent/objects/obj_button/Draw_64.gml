@@ -16,11 +16,11 @@ if (!hide){
 	draw_set_color(c_black);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
-	if (is_numeric(val)){
-		draw_text(x+width/2, y+height/2, text+string(round(val)));
+	if (!drawVal){
+		draw_text(x+width/2, y+height/2, text);
 	}
 	else{
-		draw_text(x+width/2, y+height/2, text+string(val));
+		draw_text(x+width/2, y+height/2, text+string(round(val)));
 	}	
 	draw_set_halign(fa_middle);
 	draw_set_valign(fa_top);

@@ -1,7 +1,8 @@
 {
   "resources": [
     {"id":{"name":"spr_eliteEnemy","path":"sprites/spr_eliteEnemy/spr_eliteEnemy.yy",},"order":8,},
-    {"id":{"name":"createSkillButton","path":"scripts/createSkillButton/createSkillButton.yy",},"order":1,},
+    {"id":{"name":"obj_powerUpButton","path":"objects/obj_powerUpButton/obj_powerUpButton.yy",},"order":6,},
+    {"id":{"name":"createPowerUpButton","path":"scripts/createPowerUpButton/createPowerUpButton.yy",},"order":1,},
     {"id":{"name":"weighAveDirection","path":"scripts/weighAveDirection/weighAveDirection.yy",},"order":2,},
     {"id":{"name":"damageReduction","path":"scripts/damageReduction/damageReduction.yy",},"order":0,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":7,},

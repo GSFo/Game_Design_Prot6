@@ -2,16 +2,16 @@
 
 
 if (triggered) {
+	var difficulty = obj_spawner.current_wave/5 + 1
 	for (var i = last; i < ds_list_size(waves); i++) {
 		var next = ds_list_find_value(waves, i);
 		if (next[_WAVE] == current_wave) && (next[_DELAY] < timer) {
 			var spawnpoint = next[_SPAWN];
-			var newEnemy=instance_create_layer(spawn[spawnpoint,0], spawn[spawnpoint,1],"Enemy",next[_TYPE]);
+			var newEnemy = instance_create_layer(spawn[spawnpoint,0], spawn[spawnpoint,1],"Enemy",next[_TYPE]);
 			ds_list_add(enemyLst,newEnemy.id);
 			//show_debug_message("adding to list"+string(newEnemy))
 			//show_debug_message("index is"+string(ds_list_find_index(enemyLst,newEnemy)))
-			//difficulty changes with level
-			var difficulty = obj_spawner.current_wave/5 + 1
+			//difficulty changes with level	
 			with (newEnemy){
 				attackDamage *= difficulty;
 				defense *= difficulty;
@@ -41,8 +41,14 @@ if triggered && (ds_list_empty(enemyLst)) && timer>4{
 	timer = 0
 }
 
-if (keyboard_check(vk_space)) {
+if (!triggered&&!interwaveEventHappened){
+	interwaveEventHappened = true;
+	createPowerUpButton("123",1,window_get_width()/2, window_get_height()/2,0)
+}
+
+if (!triggered&&keyboard_check(vk_space)) {
 	triggered = true;
+	interwaveEventHappened = false;
 }
 
 //bgm management

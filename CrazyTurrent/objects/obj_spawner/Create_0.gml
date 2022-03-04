@@ -7,6 +7,7 @@
 #macro _DELAY 3
 
 triggered = true;
+interwaveEventHappened = false;
 timer = 0;
 current_wave = 0;
 last = 0;
