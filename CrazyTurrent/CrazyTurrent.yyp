@@ -16,6 +16,7 @@
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":4,},
     {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},"order":5,},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":1,},
+    {"id":{"name":"getXYDiffFromFirePointAndAngle","path":"scripts/getXYDiffFromFirePointAndAngle/getXYDiffFromFirePointAndAngle.yy",},"order":3,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":1,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
     {"id":{"name":"spr_turrent","path":"sprites/spr_turrent/spr_turrent.yy",},"order":0,},
