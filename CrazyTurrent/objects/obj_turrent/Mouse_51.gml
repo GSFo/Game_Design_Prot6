@@ -8,5 +8,6 @@ if (alarm[0]<=0){
 		range = other.range;
 		damage = other.damage;
 		homingLv = other.skillLv[0];
+		sharpnelLv = other.skillLv[1];
 	}
 }

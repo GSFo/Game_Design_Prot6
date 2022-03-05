@@ -19,8 +19,8 @@ for (var _attributeIndex = 0; _attributeIndex<11;++_attributeIndex){
 			_val = attackSpd;
 		break;
 		default:
-			if (_attributeIndex-3<array_length(skillLv)){
-				_val = skillLv[_attributeIndex-3] ;
+			if (_attributeIndex-4<array_length(skillLv)){
+				_val = skillLv[_attributeIndex-4] ;
 			}
 			else{
 				throw("Skill Index Out Of Bound!");

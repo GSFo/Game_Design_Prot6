@@ -16,7 +16,7 @@ if (click){
 		break;
 		default:
 			if (attributeIndex-4<array_length(obj_turrent.skillLv)){
-				obj_turrent.skillLv[attributeIndex-3] +=1;
+				obj_turrent.skillLv[attributeIndex-4] +=1;
 			}
 			else{
 				throw("Skill Index Out Of Bound: "+string(attributeIndex-4));
