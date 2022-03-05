@@ -22,5 +22,7 @@ if (click){
 				throw("Skill Index Out Of Bound: "+string(attributeIndex-4));
 			}
 	}
-	instance_destroy();
+	for (var i =0; i<array_length(obj_spawner.buttons);++i){
+		instance_destroy(obj_spawner.buttons[i]);
+	}
 }

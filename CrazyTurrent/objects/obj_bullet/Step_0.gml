@@ -2,8 +2,8 @@
 // You can write your code in this editor
 range-=spd*delta_time/10000;
 image_angle = direction-90;
-x+=chaosAmplifierLv*150*delta_time/1000000*chaosX;
-y+=chaosAmplifierLv*50*delta_time/1000000*chaosY;
+x+=delta_time/1000000*chaosX;
+y+=delta_time/1000000*chaosY;
 //homing bullet
 if (homingLv>0){	
 	if (homingTarget!=pointer_null&&instance_exists(homingTarget)&&distance_to_object(homingTarget)>homingLv*200){
