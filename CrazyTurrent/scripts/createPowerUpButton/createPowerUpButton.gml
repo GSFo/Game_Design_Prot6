@@ -12,9 +12,7 @@ function createPowerUpButton(_text, _val, _x, _y,_attributeIndex){
 		//var lineNumber = round(width*.8/string_width(_text)-.49);
 		//var charNumberEachLine =round(string_length(_text)/lineNumber);
 		for (var i = string_length(text)-1; i>=0;--i){
-			show_debug_message("curr is: "+string_char_at(text,i)+"at"+string(i))
 			if  (string_char_at(text,i)==" "){
-				show_debug_message("space detected")
 				text = string_insert("\n",text,i);
 			}
 		}

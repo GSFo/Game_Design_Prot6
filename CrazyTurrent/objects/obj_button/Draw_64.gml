@@ -1,13 +1,9 @@
 if (!hide){
-	//show_debug_message(cdPercent)
-	if (cdPercent<=0){
-		//show_debug_message("notinCD")
-		
+	if (cdPercent<=0){		
 		draw_set_color(merge_color(c_ltgray,c_white,hoverTime));
 		draw_roundrect(x,y,x+width,y+height,0)
 	}
 	else{
-		//show_debug_message("inCD")
 		draw_set_color(merge_color(c_ltgray,c_white,hoverTime));
 		draw_roundrect(x,y,x+width*(1-cdPercent),y+height,0)
 		draw_set_color(c_dkgray);

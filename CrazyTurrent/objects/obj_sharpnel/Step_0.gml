@@ -4,4 +4,3 @@
 // Inherit the parent event
 event_inherited();
 speed*= power(1/20,delta_time/1000000);
-show_debug_message(speed)
