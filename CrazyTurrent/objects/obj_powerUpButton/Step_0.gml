@@ -9,17 +9,17 @@ if (click){
 			obj_turrent.attackSpd +=5;
 		break;
 		case 2:
-			obj_turrent.range +=5;
+			obj_turrent.range +=100;
 		break;
 		case 3:
 			obj_turrent.defense +=5;
 		break;
 		default:
-			if (attributeIndex-3<array_length(obj_turrent.skillLv)){
+			if (attributeIndex-4<array_length(obj_turrent.skillLv)){
 				obj_turrent.skillLv[attributeIndex-3] +=1;
 			}
 			else{
-				throw("Skill Index Out Of Bound!");
+				throw("Skill Index Out Of Bound: "+string(attributeIndex-4));
 			}
 	}
 	instance_destroy();
