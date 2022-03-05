@@ -2,7 +2,7 @@
 
 
 if (triggered) {
-	var difficulty = obj_spawner.current_wave/5 + 1
+	var difficulty = obj_spawner.current_wave + 5
 	for (var i = last; i < ds_list_size(waves); i++) {
 		var next = ds_list_find_value(waves, i);
 		if (next[_WAVE] == current_wave) && (next[_DELAY] < timer) {

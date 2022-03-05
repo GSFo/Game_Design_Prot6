@@ -3,10 +3,11 @@
 if (alarm[0]<=0){
 	//chaos amplifier
 	var _firePointX = firePointX;
+	var _firePointY = firePointY;
 	alarm[0] = getAttackCDFromAttackSpeed(attackSpd)*room_speed;
 	
 	for (var _chaosGhostShooter=0; _chaosGhostShooter<skillLv[5]+1;++_chaosGhostShooter){
-		firePointXYDiff = getXYDiffFromFirePointAndAngle(_firePointX,firePointY);
+		firePointXYDiff = getXYDiffFromFirePointAndAngle(_firePointX,_firePointY);
 		var _deltaDir = 45/(1+skillLv[3]-skillLv[5]*2)
 		var _dir = -skillLv[2]/2*_deltaDir;
 		var _criticalDamage = (max(skillLv[4]-10,0))/10+1.5;
@@ -19,6 +20,7 @@ if (alarm[0]<=0){
 				homingLv = other.skillLv[0];
 				sharpnelLv = other.skillLv[1];
 				chainLightningLv = other.skillLv[6];
+				chaosAmplifierLv = other.skillLv[7];
 				direction +=_dir;
 				//critical hit
 				if (_criticalChance>random_range(0,100)){
@@ -32,10 +34,12 @@ if (alarm[0]<=0){
 					damage /= 2;
 					homingLv /= 2;
 					sharpnelLv /=2;
+					sprite_index = spr_ghostBullet;
 				}
 			}
 			_dir +=_deltaDir;
 		}
-		var _firePointX = random_range(-100*skillLv[5],100*skillLv[5])
+		var _firePointX = random_range(-300*(1+.2*skillLv[5]),300*(1+.2*skillLv[5]))
+		var _firePointY = random_range(-600*(1+.2*skillLv[5]),-100)
 	}
 }

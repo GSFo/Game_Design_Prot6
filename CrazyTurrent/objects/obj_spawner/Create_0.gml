@@ -16,7 +16,7 @@ randomize();
 waves = ds_list_create();
 // list: [wave number, spawn_type, spawn_location.x,delay_time]
 for (i=0;i<10;++i){
-	enemyNumber = 5+i*2;
+	enemyNumber = 10+i*3;
 	enemyInterval = 4/(enemyNumber-1);
 	for (j=0; j<enemyNumber; ++j){
 		ds_list_add(waves, [i,obj_enemy,j%3, enemyInterval*j]);
