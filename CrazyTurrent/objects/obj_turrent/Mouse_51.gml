@@ -7,5 +7,6 @@ if (alarm[0]<=0){
 		move_towards_point(mouse_x,mouse_y,spd);
 		range = other.range;
 		damage = other.damage;
+		homingLv = other.skillLv[0];
 	}
 }
