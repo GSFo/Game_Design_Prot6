@@ -35,7 +35,7 @@ if (triggered) {
 //show_debug_message("debug:"+ string(instance_number(obj_enemy)))
 //show_debug_message("triggered:"+ string(triggered))
 //show_debug_message("size is: "+string(ds_list_size(enemyLst)))
-if triggered && (ds_list_empty(enemyLst)) && timer>4{
+if triggered && (ds_list_empty(enemyLst)) && timer>10{
 	triggered = false;
 	current_wave += 1;
 	timer = 0

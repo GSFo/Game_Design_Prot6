@@ -18,6 +18,7 @@ if (alarm[0]<=0){
 				damage = other.damage;
 				homingLv = other.skillLv[0];
 				sharpnelLv = other.skillLv[1];
+				chainLightningLv = other.skillLv[6];
 				direction +=_dir;
 				//critical hit
 				if (_criticalChance>random_range(0,100)){
@@ -26,7 +27,12 @@ if (alarm[0]<=0){
 					damage *= _criticalDamage;
 					speed *= _criticalDamage;
 				}
-			
+				
+				if (_chaosGhostShooter>0){
+					damage /= 2;
+					homingLv /= 2;
+					sharpnelLv /=2;
+				}
 			}
 			_dir +=_deltaDir;
 		}
