@@ -20,7 +20,7 @@ if (alarm[0]<=0){
 				homingLv = other.skillLv[0];
 				sharpnelLv = other.skillLv[1];
 				chainLightningLv = other.skillLv[6];
-				chaosAmplifierLv = other.skillLv[7];
+				chaosAmplifierLv = other.skillLv[5];
 				direction +=_dir;
 				//critical hit
 				if (_criticalChance>random_range(0,100)){
