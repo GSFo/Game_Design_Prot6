@@ -5,4 +5,3 @@ attributeBufferName = ["Attack Boost","Attack Speed Boost","Range Boost","Defens
 	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"]
 attributeName = ["Attack","Attack Speed", "Range", "Defense",
 	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"]
-	

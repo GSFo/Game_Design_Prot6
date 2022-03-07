@@ -33,3 +33,8 @@ spawn[2,1] = 600;
 
 //currBGM=-1;
 enemyLst = ds_list_create();
+
+bg_layer = layer_create(999);
+bg_element = layer_background_create(bg_layer, bg1);
+
+pre_bg_num = 0;

@@ -49,14 +49,33 @@ if (!triggered){
 			var _attributeIndex = irandom_range(0,11);
 			buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 400,_attributeIndex);
 		}
-	}	
+	}
 }
 
 if (!triggered&&keyboard_check(vk_space)) {
 	triggered = true;
 	interwaveEventHappened = false;
-}
+	
+	// Change background
+	bg_num = irandom(4);
+	while (bg_num == pre_bg_num) {
+		bg_num = irandom(4);
+	}
 
+	if (bg_num == 0) {
+		layer_background_change(bg_element, bg1);
+	} else if (bg_num == 1) {
+		layer_background_change(bg_element, bg2);
+	} else if (bg_num == 2) {
+		layer_background_change(bg_element, bg3);
+	} else if (bg_num == 3) {
+		layer_background_change(bg_element, bg4);
+	} else if (bg_num == 4) {
+		layer_background_change(bg_element, bg5);
+	}
+	
+	bg_num = bg_num;
+}
 //bgm management
 /*
 if (obj_player.godBlessDuraton>0){

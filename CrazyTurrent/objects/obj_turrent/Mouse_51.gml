@@ -42,4 +42,5 @@ if (alarm[0]<=0){
 		var _firePointX = random_range(-300*(1+.2*skillLv[5]),300*(1+.2*skillLv[5]))
 		var _firePointY = random_range(-600*(1+.2*skillLv[5]),-100)
 	}
+	sprite_index = spr_turrent_shoot;
 }
