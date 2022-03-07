@@ -61,20 +61,13 @@ if (!triggered&&keyboard_check(vk_space)) {
 	while (bg_num == pre_bg_num) {
 		bg_num = irandom(4);
 	}
-
-	if (bg_num == 0) {
-		layer_background_change(bg_element, bg1);
-	} else if (bg_num == 1) {
-		layer_background_change(bg_element, bg2);
-	} else if (bg_num == 2) {
-		layer_background_change(bg_element, bg3);
-	} else if (bg_num == 3) {
-		layer_background_change(bg_element, bg4);
-	} else if (bg_num == 4) {
-		layer_background_change(bg_element, bg5);
-	}
-	
-	bg_num = bg_num;
+	alarm[1] = room_speed
+}
+if (alarm[1]>0){
+	layer_background_alpha(bg_element,alarm[1]/room_speed)
+}
+else if (alarm[2]>0){
+	layer_background_alpha(bg_element,1-alarm[2]/room_speed)
 }
 //bgm management
 /*

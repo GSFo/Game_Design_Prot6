@@ -11,6 +11,7 @@ interwaveEventHappened = false;
 timer = 0;
 current_wave = 0;
 last = 0;
+alarm[1]=-1;
 
 randomize();
 waves = ds_list_create();
@@ -34,7 +35,7 @@ spawn[2,1] = 600;
 //currBGM=-1;
 enemyLst = ds_list_create();
 
-bg_layer = layer_create(999);
+bg_layer = layer_create(399);
 bg_element = layer_background_create(bg_layer, bg1);
 
 pre_bg_num = 0;
