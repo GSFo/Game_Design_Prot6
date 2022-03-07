@@ -52,10 +52,7 @@ if (!triggered){
 	}
 }
 
-if (!triggered&&keyboard_check(vk_space)) {
-	triggered = true;
-	interwaveEventHappened = false;
-	
+if (!triggered&&keyboard_check(vk_space)&&alarm[1]<0&&alarm[0]<0) {
 	// Change background
 	bg_num = irandom(4);
 	while (bg_num == pre_bg_num) {
