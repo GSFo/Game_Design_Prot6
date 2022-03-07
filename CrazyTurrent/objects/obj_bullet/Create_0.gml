@@ -5,3 +5,4 @@ homingTarget = pointer_null;
 alarm[1] = 1;
 chaosX = 0 
 chaosY = 0
+hitTargetLst = ds_list_create();

@@ -10,4 +10,4 @@ for (var _sharpnelNumber = 0; _sharpnelNumber < 2*sharpnelLv; ++_sharpnelNumber)
 		//sharpnelLv = round(other.sharpnelLv/4 -.49);
 	}
 }
-	
+ds_list_destroy(hitTargetLst)
