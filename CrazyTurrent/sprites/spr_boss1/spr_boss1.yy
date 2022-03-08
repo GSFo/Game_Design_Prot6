@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_boss1","path":"sprites/spr_boss1/spr_boss1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_boss1",
     "tags": [],
     "resourceType": "GMSequence",

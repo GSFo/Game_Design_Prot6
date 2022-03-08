@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_turrent_shoot","path":"sprites/spr_turrent_shoot/spr_turrent_shoot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_turrent_shoot",
     "tags": [],
     "resourceType": "GMSequence",
