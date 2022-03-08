@@ -49,16 +49,18 @@ if (!triggered){
 			var _attributeIndex = irandom_range(0,array_length(obj_turrent.skillLv)+3);
 			buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 400,_attributeIndex);
 		}
+		bg_num = irandom(4);
+		while (bg_num == pre_bg_num) {
+			bg_num = irandom(4);
+		}
+		alarm[1] = room_speed
 	}
+
 }
 
 if (!triggered&&keyboard_check(vk_space)&&alarm[1]<0&&alarm[0]<0) {
-	// Change background
-	bg_num = irandom(4);
-	while (bg_num == pre_bg_num) {
-		bg_num = irandom(4);
-	}
-	alarm[1] = room_speed
+	triggered = true;
+	interwaveEventHappened = false;
 }
 if (alarm[1]>0){
 	layer_background_alpha(bg_element,alarm[1]/room_speed)

@@ -1,4 +1,3 @@
-/// @description Insert new background fade in
+/// @description DO NOT DELETE
 // You can write your code in this editor
-triggered = true;
-interwaveEventHappened = false;
+
