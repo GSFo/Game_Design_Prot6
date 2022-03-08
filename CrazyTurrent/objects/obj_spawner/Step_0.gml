@@ -7,7 +7,7 @@ if (triggered) {
 		var next = ds_list_find_value(waves, i);
 		if (next[_WAVE] == current_wave) && (next[_DELAY] < timer) {
 			var spawnpoint = next[_SPAWN];
-			var newEnemy = instance_create_layer(spawn[spawnpoint,0], spawn[spawnpoint,1],"Enemy",next[_TYPE]);
+			var newEnemy = instance_create_layer(spawn[spawnpoint,0]+random_range(-300,300), spawn[spawnpoint,1]+random_range(-300,300),"Enemy",next[_TYPE]);
 			ds_list_add(enemyLst,newEnemy.id);
 			//show_debug_message("adding to list"+string(newEnemy))
 			//show_debug_message("index is"+string(ds_list_find_index(enemyLst,newEnemy)))
