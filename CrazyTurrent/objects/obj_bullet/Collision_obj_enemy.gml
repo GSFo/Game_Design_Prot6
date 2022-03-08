@@ -13,6 +13,25 @@ if (ds_list_find_index(hitTargetLst,other.id)==-1){
 		if (pierceLv == -1){
 			instance_destroy();
 		}
+		
+		//add debuffs
+		if (frostAttack >0){
+			other.alarm[0] = (2+.5*frostAttack)*room_speed;
+			other.frostDebuff = frostAttack;
+		}
+		if (poisonAttack>0){
+			other.alarm[1] = (2+.5*poisonAttack)*room_speed;
+			other.poisonDebuff = poisonAttack;
+		}
+		if (damageAmplification>0){
+			other.alarm[2] = (2+.5*damageAmplification)*room_speed;
+			other.damageAmplificationDebuff = damageAmplification;
+		}
+		if (burnAttack>0){
+			other.alarm[3] = (2+.5*burnAttack)*room_speed;
+			other.burnDebuff = burnAttack;
+		}
+		
 		//release chain lightning
 		if (chainLightningLv>0){
 			var _enemyOnChain = ds_list_create();

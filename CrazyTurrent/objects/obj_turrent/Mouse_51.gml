@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description shoot
 // You can write your code in this editor
 if (alarm[0]<=0){
 	//chaos amplifier
@@ -21,6 +21,8 @@ if (alarm[0]<=0){
 				sharpnelLv = other.skillLv[1];
 				chainLightningLv = other.skillLv[6];
 				chaosAmplifierLv = other.skillLv[5];
+				pierceLv = other.skillLv[7];
+				
 				direction +=_dir;
 				//critical hit
 				if (_criticalChance>random_range(0,100)){
@@ -35,6 +37,12 @@ if (alarm[0]<=0){
 					homingLv /= 2;
 					sharpnelLv /=2;
 					sprite_index = spr_ghostBullet;
+				}
+				else{
+					frostAttack = other.skillLv[8];
+					poisonAttack = other.skillLv[9];
+					damageAmplification = other.skillLv[10];
+					burnAttack = other.skillLv[11];
 				}
 			}
 			_dir +=_deltaDir;

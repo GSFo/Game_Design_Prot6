@@ -1,6 +1,11 @@
 /// @desc
 
 move_speed = 1; 
-alarm[0] = room_speed * 1;
 
+speed = move_speed;
+damage = attackDamage;
 
+frostDebuff = 0;
+poisonDebuff = 0;
+damageAmplificationDebuff = 0;
+burnDebuff = 0;
