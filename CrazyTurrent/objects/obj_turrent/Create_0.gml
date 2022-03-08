@@ -7,3 +7,4 @@ attributeBufferName = ["Attack Boost","Attack Speed Boost","Range Boost","Defens
 attributeName = ["Attack","Attack Speed", "Range", "Defense",
 	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
 	,"Frost Attack","Poison Attack","Damage Ampli","Burn Attack"]
+life = maxLife;

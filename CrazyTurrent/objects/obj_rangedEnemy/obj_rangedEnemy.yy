@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_eliteEnemy",
+    "path": "sprites/spr_eliteEnemy/spr_eliteEnemy.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -20,7 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":11,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [
     {"propertyId":{"name":"attackDamage","path":"objects/obj_enemy/obj_enemy.yy",},"objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
