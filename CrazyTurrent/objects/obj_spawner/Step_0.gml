@@ -17,6 +17,19 @@ if (triggered) {
 				defense *= difficulty;
 				life *= difficulty;
 				life_max *= difficulty;
+				switch (other.currentBuff){
+					case 1:
+						attackDamage *=1.5;
+						break;
+					case 2:
+						defense *= 1.2;
+						life_max *= 1.2;
+						life *= 1.2;
+						break;
+					case 3:
+						move_speed *= 1.3;
+						break;
+				}
 			}
 			last=i;
 		}
@@ -32,9 +45,7 @@ if (triggered) {
 	}
 	*/
 }
-//show_debug_message("debug:"+ string(instance_number(obj_enemy)))
-//show_debug_message("triggered:"+ string(triggered))
-//show_debug_message("size is: "+string(ds_list_size(enemyLst)))
+
 if triggered && (ds_list_empty(enemyLst)) && timer>10{
 	triggered = false;
 	current_wave += 1;
@@ -50,12 +61,12 @@ if (!triggered){
 			buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 400,_attributeIndex);
 		}
 		bg_num = irandom(4);
+		currentBuff = irandom(3);
 		while (bg_num == pre_bg_num) {
 			bg_num = irandom(4);
 		}
 		alarm[1] = room_speed
 	}
-
 }
 
 if (!triggered&&keyboard_check(vk_space)&&alarm[1]<0&&alarm[0]<0) {

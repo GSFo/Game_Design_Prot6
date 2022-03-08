@@ -32,6 +32,8 @@ spawn[1,1] = 900;
 spawn[2,0] = 200;
 spawn[2,1] = 600;
 
+currentBuff = 0;
+
 //currBGM=-1;
 enemyLst = ds_list_create();
 

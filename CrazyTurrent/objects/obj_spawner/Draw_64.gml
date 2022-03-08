@@ -5,4 +5,5 @@ draw_set_halign(fa_middle)
 draw_set_valign(fa_center)
 if (!triggered) {
 	draw_text(window_get_width()/2, 300, "Press space to spawn the next wave");
+	draw_text(window_get_width()/2, 330, "Next wave has buff" + string(currentBuff));
 }
