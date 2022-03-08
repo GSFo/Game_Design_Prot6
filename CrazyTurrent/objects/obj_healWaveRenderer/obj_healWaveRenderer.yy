@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "spr_boss1",
-    "path": "sprites/spr_boss1/spr_boss1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_enemy",
-    "path": "objects/obj_enemy/obj_enemy.yy",
+    "name": "obj_lightningRenderer",
+    "path": "objects/obj_lightningRenderer/obj_lightningRenderer.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,17 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":11,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":76,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Objects/Enemy.yy",
+    "name": "Projectile",
+    "path": "folders/Objects/Projectile.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_healEnemy",
+  "name": "obj_healWaveRenderer",
   "tags": [],
   "resourceType": "GMObject",
 }

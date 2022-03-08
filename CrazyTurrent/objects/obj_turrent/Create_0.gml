@@ -1,6 +1,7 @@
 /// @description initial skill levels
 // You can write your code in this editor
-skillLv = [0,0,0,0,0,0,0,0,0,0,0,0]
+skillLv = [0,0,0,0,0,0,5,0,
+	0,0,0,0]
 attributeBufferName = ["Attack Boost","Attack Speed Boost","Range Boost","Defense Boost",
 	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
 	,"Frost Attack","Poison Attack","Damage Amplication","Burn Attack"]

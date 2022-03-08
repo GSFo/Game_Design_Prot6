@@ -21,6 +21,7 @@
     {"id":{"name":"GUIHover","path":"scripts/GUIHover/GUIHover.yy",},"order":2,},
     {"id":{"name":"obj_tankyEnemy","path":"objects/obj_tankyEnemy/obj_tankyEnemy.yy",},"order":1,},
     {"id":{"name":"spr_sharpnel","path":"sprites/spr_sharpnel/spr_sharpnel.yy",},"order":7,},
+    {"id":{"name":"obj_healWaveRenderer","path":"objects/obj_healWaveRenderer/obj_healWaveRenderer.yy",},"order":5,},
     {"id":{"name":"getAttackCDFromAttackSpeed","path":"scripts/getAttackCDFromAttackSpeed/getAttackCDFromAttackSpeed.yy",},"order":1,},
     {"id":{"name":"bg2","path":"sprites/bg2/bg2.yy",},"order":1,},
     {"id":{"name":"spr_boss1","path":"sprites/spr_boss1/spr_boss1.yy",},"order":4,},
