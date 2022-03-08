@@ -3,8 +3,8 @@
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
 draw_set_color(c_white)
-for (var _attributeIndex = 0; _attributeIndex<11;++_attributeIndex){
-	draw_text(10,600+30*_attributeIndex,attributeName[_attributeIndex])
+for (var _attributeIndex = 0; _attributeIndex<array_length(obj_turrent.skillLv)+4;++_attributeIndex){
+	draw_text(10,500+30*_attributeIndex,attributeName[_attributeIndex])
 	switch (_attributeIndex){
 		case 0:
 			var _val = damage;
@@ -26,5 +26,5 @@ for (var _attributeIndex = 0; _attributeIndex<11;++_attributeIndex){
 				throw("Skill Index Out Of Bound!");
 			}
 	}
-	draw_text(150,600+30*_attributeIndex,_val);
+	draw_text(150,500+30*_attributeIndex,_val);
 }

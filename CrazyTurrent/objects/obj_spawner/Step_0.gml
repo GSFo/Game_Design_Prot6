@@ -46,7 +46,7 @@ if (!triggered){
 		interwaveEventHappened = true;
 		buttons = [0,0,0,0,0]
 		for (i =0;i<4;++i){
-			var _attributeIndex = irandom_range(0,11);
+			var _attributeIndex = irandom_range(0,array_length(obj_turrent.skillLv)+3);
 			buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 400,_attributeIndex);
 		}
 	}
