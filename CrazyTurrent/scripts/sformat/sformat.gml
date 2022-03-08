@@ -8,13 +8,13 @@ function sformat(fmt, args){
 	var a = 0;
 
 	if (n_args == 0) {
-		return fmt;
+		return string_copy(fmt, 1, length);
 	}
 
 	var retstr = ""
 	for (i = 1; i < length; i++) {
 		if (a == n_args) {
-			return retstr + string_copy(fmt, i + 1, length - i);
+			return retstr + string_copy(fmt, i + 1, length);
 		}
 
 		if (string_char_at(fmt, i) == "{" and string_char_at(fmt, i + 1) == "}") {
