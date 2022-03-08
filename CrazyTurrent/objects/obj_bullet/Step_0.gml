@@ -17,7 +17,8 @@ if (homingLv>0){
 		for (var i=0;i<ds_list_size(obj_spawner.enemyLst);++i){
 			var enemy = ds_list_find_value(obj_spawner.enemyLst,i);
 			var distance = distance_to_object(enemy);
-			if (distance<minDistance&&ds_list_find_index(hitTargetLst,enemy)==-1){
+			if (distance<minDistance&&ds_list_find_index(hitTargetLst,enemy.id)==-1){
+				show_debug_message("homing new:" + string(enemy))
 				closestEnemy = enemy;
 				minDistance = distance;
 			}

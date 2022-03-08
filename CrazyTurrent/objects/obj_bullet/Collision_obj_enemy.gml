@@ -2,11 +2,14 @@
 // You can write your code in this editor
 
 
-if (ds_list_find_index(hitTargetLst,other)==-1){
+if (ds_list_find_index(hitTargetLst,other.id)==-1){
 	if (pierceLv>=0){
 		--pierceLv;
-		ds_list_add(hitTargetLst,other);
+		ds_list_add(hitTargetLst,other.id);
 		other.life -= damage * damageReducation(other.defense);
+		if (homingTarget == other.id){
+			homingTarget = pointer_null;
+		}
 		if (pierceLv == -1){
 			instance_destroy();
 		}
