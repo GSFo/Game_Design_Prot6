@@ -16,6 +16,7 @@
     {"id":{"name":"spr_enemyBullet","path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},"order":11,},
     {"id":{"name":"obj_turrent","path":"objects/obj_turrent/obj_turrent.yy",},"order":0,},
     {"id":{"name":"spr_laserBoomerang","path":"sprites/spr_laserBoomerang/spr_laserBoomerang.yy",},"order":1,},
+    {"id":{"name":"obj_enemyFast","path":"objects/obj_enemyFast/obj_enemyFast.yy",},"order":4,},
     {"id":{"name":"bg5","path":"sprites/bg5/bg5.yy",},"order":4,},
     {"id":{"name":"spr_ghostBullet","path":"sprites/spr_ghostBullet/spr_ghostBullet.yy",},"order":8,},
     {"id":{"name":"obj_laserBoomerang","path":"objects/obj_laserBoomerang/obj_laserBoomerang.yy",},"order":0,},
