@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemy1",
-    "path": "sprites/spr_enemy1/spr_enemy1.yy",
+    "name": "spr_goblin_run",
+    "path": "sprites/spr_goblin_run/spr_goblin_run.yy",
   },
   "solid": false,
   "visible": true,

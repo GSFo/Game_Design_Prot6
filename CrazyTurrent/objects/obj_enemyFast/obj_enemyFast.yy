@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_eliteEnemy",
-    "path": "sprites/spr_eliteEnemy/spr_eliteEnemy.yy",
+    "name": "spr_flying_eye_fly",
+    "path": "sprites/spr_flying_eye_fly/spr_flying_eye_fly.yy",
   },
   "solid": false,
   "visible": true,

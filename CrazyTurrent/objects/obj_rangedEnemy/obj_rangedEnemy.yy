@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_eliteEnemy",
-    "path": "sprites/spr_eliteEnemy/spr_eliteEnemy.yy",
+    "name": "spr_mushroom_run",
+    "path": "sprites/spr_mushroom_run/spr_mushroom_run.yy",
   },
   "solid": false,
   "visible": true,

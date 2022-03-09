@@ -4,4 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
+death_sprite_index = spr_mushroom_death;
+
 alarm[11]=room_speed;

@@ -4,4 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-alarm[11] = room_speed;
+death_sprite_index = spr_witch_death;
+
+alarm[11] = room_speed; 

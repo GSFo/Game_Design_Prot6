@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_boss1",
-    "path": "sprites/spr_boss1/spr_boss1.yy",
+    "name": "spr_witch_run",
+    "path": "sprites/spr_witch_run/spr_witch_run.yy",
   },
   "solid": false,
   "visible": true,
