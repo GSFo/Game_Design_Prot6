@@ -3,10 +3,10 @@
 skillLv = [1,1,1,1,1,1,1,1,
 	1,1,1,1]
 attributeBufferName = ["Attack Boost","Attack Speed Boost","Range Boost","Defense Boost",
-	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
+	"Homing Attack","Shrapnel","Scatter Shot","Focus Fire","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
 	,"Frost Attack","Poison Attack","Damage Amplication","Burn Attack"]
 attributeName = ["Attack","Attack Speed", "Range", "Defense",
-	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
+	"Homing Attack","Shrapnel","Scatter Shot","Focus Fire","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
 	,"Frost Attack","Poison Attack","Damage Ampli","Burn Attack"]
 life = maxLife;
 

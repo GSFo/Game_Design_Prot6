@@ -3,4 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-alarm[11] = 3*room_speed;
+alarm[11] = 1.2*room_speed;

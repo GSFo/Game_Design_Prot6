@@ -8,7 +8,7 @@ if (alarm[0]<=0){
 	
 	for (var _chaosGhostShooter=0; _chaosGhostShooter<skillLv[5]+1;++_chaosGhostShooter){
 		firePointXYDiff = getXYDiffFromFirePointAndAngle(_firePointX,_firePointY);
-		var _deltaDir = 45/(1+max(skillLv[3]-skillLv[5],0));
+		var _deltaDir = 45/(1+max(skillLv[3]-skillLv[5]/2,0));
 		var _dir = -skillLv[2]/2*_deltaDir;
 		var _criticalDamage = (max(skillLv[4]-10,0))/10+1.5;
 		var _criticalChance = skillLv[4] *10;
@@ -23,7 +23,7 @@ if (alarm[0]<=0){
 				chaosAmplifierLv = other.skillLv[5];
 				pierceLv = other.skillLv[7];
 				
-				direction +=_dir;
+				direction += _dir;
 				//critical hit
 				if (_criticalChance>random_range(0,100)){
 					image_xscale *= _criticalDamage;

@@ -22,7 +22,7 @@ for (var _bouncingTime =0; _bouncingTime<4;++_bouncingTime){
 		}
 	}
 	//bounce if close enough
-	if (_minDistance<300){
+	if (_minDistance<450){
 		ds_list_add(_enemyOnChain,_closestEnemy);
 		ds_list_add(_lightningRenderer.lightningVertex,[_closestEnemy.x,_closestEnemy.y]);
 		_closestEnemy.life += 15;

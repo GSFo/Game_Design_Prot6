@@ -6,3 +6,5 @@ alarm[1] = 1;
 chaosX = 0 
 chaosY = 0
 hitTargetLst = ds_list_create();
+chainLightningDamage = chainLightningLv*2 + 5;
+chainLightningChance = chainLightningLv*.05 + .2;
