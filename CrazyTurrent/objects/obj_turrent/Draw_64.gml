@@ -34,3 +34,11 @@ for (var _attributeIndex = 0; _attributeIndex<array_length(obj_turrent.skillLv)+
 	draw_text_transformed(220,_startFromHeight+_lineInterval*_attributeIndex,_val,1.5,1.5,0);
 }
 }
+
+
+var _health_x1 = 32
+var _health_y1 = window_get_height() - 32
+var _health_x2 = window_get_width() - 32
+var _health_y2 = window_get_height() - 16
+var _health_length = life / maxLife * 100
+draw_healthbar(_health_x1, _health_y1, _health_x2, _health_y2, _health_length, c_black, c_red, c_lime, 0, true, true)
