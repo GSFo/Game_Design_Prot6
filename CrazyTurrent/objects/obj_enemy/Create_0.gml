@@ -1,6 +1,6 @@
 /// @desc
 move_speed = 1; 
-
+lifePre = life;
 speed = move_speed;
 damage = attackDamage;
 

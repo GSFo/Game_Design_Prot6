@@ -8,7 +8,7 @@ if (alarm[0]<=0){
 	
 	for (var _chaosGhostShooter=0; _chaosGhostShooter<skillLv[5]+1;++_chaosGhostShooter){
 		firePointXYDiff = getXYDiffFromFirePointAndAngle(_firePointX,_firePointY);
-		var _deltaDir = 45/(1+skillLv[3]-skillLv[5]*2)
+		var _deltaDir = 45/(1+max(skillLv[3]-skillLv[5],0));
 		var _dir = -skillLv[2]/2*_deltaDir;
 		var _criticalDamage = (max(skillLv[4]-10,0))/10+1.5;
 		var _criticalChance = skillLv[4] *10;
