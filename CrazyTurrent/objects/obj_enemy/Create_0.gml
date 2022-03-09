@@ -9,3 +9,5 @@ frostDebuff = 0;
 poisonDebuff = 0;
 damageAmplificationDebuff = 0;
 burnDebuff = 0;
+
+alarm[11] = room_speed;

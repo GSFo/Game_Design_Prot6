@@ -37,5 +37,7 @@ if (alarm[2]>0){
 	image_blend = c_dkgray;
 }
 
-
+if (distance_to_object(obj_turrent)<=stopDistance){
+	speed =0;
+}
 

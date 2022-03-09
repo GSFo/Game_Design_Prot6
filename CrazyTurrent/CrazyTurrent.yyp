@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_eliteEnemy","path":"sprites/spr_eliteEnemy/spr_eliteEnemy.yy",},"order":6,},
     {"id":{"name":"draw_lightning","path":"scripts/draw_lightning/draw_lightning.yy",},"order":3,},
+    {"id":{"name":"spr_enemyCloseup","path":"sprites/spr_enemyCloseup/spr_enemyCloseup.yy",},"order":12,},
     {"id":{"name":"obj_powerUpButton","path":"objects/obj_powerUpButton/obj_powerUpButton.yy",},"order":6,},
     {"id":{"name":"createPowerUpButton","path":"scripts/createPowerUpButton/createPowerUpButton.yy",},"order":1,},
     {"id":{"name":"bg1","path":"sprites/bg1/bg1.yy",},"order":0,},
@@ -36,6 +37,7 @@
     {"id":{"name":"bg3","path":"sprites/bg3/bg3.yy",},"order":2,},
     {"id":{"name":"spr_turrent_shoot","path":"sprites/spr_turrent_shoot/spr_turrent_shoot.yy",},"order":0,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":1,},
+    {"id":{"name":"obj_enemyCloseup","path":"objects/obj_enemyCloseup/obj_enemyCloseup.yy",},"order":6,},
     {"id":{"name":"obj_sharpnel","path":"objects/obj_sharpnel/obj_sharpnel.yy",},"order":2,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
     {"id":{"name":"spr_turrent_draft","path":"sprites/spr_turrent_draft/spr_turrent_draft.yy",},"order":0,},
