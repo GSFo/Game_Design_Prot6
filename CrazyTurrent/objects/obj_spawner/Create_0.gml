@@ -33,7 +33,7 @@ spawn[2,0] = 200;
 spawn[2,1] = 600;
 
 currentBuff = 0;
-
+buffText = ["Normal", "Super Power", "Body Enhancement", "Agility"]
 //currBGM=-1;
 enemyLst = ds_list_create();
 

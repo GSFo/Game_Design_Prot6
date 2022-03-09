@@ -7,4 +7,9 @@ if (guiHideButton.click){
 	guiHideButton.click = false;
 	guiHideButton.text = "+";
 	guiHideButton.val *= -1;
+	if (guiHideButton.val == 1){
+		guiHideButton.text = "-";
+	}else{
+		guiHideButton.text = "+";
+	}
 }
