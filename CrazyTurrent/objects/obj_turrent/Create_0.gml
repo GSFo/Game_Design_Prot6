@@ -14,3 +14,5 @@ guiHideButton = createButton("-",1,10,920,40,40)
 with guiHideButton{
 	drawVal = false;
 }
+
+bodySprite = spr_body;
