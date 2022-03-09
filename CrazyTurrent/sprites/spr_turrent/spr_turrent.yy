@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_turrent","path":"sprites/spr_turrent/spr_turrent.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_turrent",
     "tags": [],
     "resourceType": "GMSequence",

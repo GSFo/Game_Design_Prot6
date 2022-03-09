@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ghostBullet","path":"sprites/spr_ghostBullet/spr_ghostBullet.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_ghostBullet",
     "tags": [],
     "resourceType": "GMSequence",
