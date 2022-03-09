@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_laserBoomerang",
+    "path": "sprites/spr_laserBoomerang/spr_laserBoomerang.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

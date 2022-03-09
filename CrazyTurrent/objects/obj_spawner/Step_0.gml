@@ -9,9 +9,6 @@ if (triggered) {
 			var spawnpoint = next[_SPAWN];
 			var newEnemy = instance_create_layer(spawn[spawnpoint,0]+random_range(-300,300), spawn[spawnpoint,1]+random_range(-300,300),"Enemy",next[_TYPE]);
 			ds_list_add(enemyLst,newEnemy.id);
-			//show_debug_message("adding to list"+string(newEnemy))
-			//show_debug_message("index is"+string(ds_list_find_index(enemyLst,newEnemy)))
-			//difficulty changes with level	
 			with (newEnemy){
 				attackDamage *= difficulty;
 				defense *= difficulty;

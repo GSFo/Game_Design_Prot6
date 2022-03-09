@@ -14,13 +14,11 @@ if (obj_turrent.x < x) {
 image_blend = c_white;
 if (alarm[0]>0){
 	speed = move_speed* power(.8,frostDebuff);
-	show_debug_message("inflicted frost")
 	image_blend = c_blue;
 }
 //poison
 if (alarm[1]>0){
 	life -= poisonDebuff *2*delta_time/1000000;
-	show_debug_message("inflicted poison")
 	image_blend = c_green;
 }
 //burn 
