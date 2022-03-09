@@ -34,6 +34,7 @@ if (alarm[2]>0){
 }
 
 if (distance_to_object(obj_turrent)<=stopDistance){
+	if life > 0 sprite_index = idle_sprite_index;
 	speed =0;
 }
 

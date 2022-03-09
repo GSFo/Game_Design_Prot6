@@ -39,6 +39,7 @@
     {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},"order":5,},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":1,},
     {"id":{"name":"spr_flying_eye_fly","path":"sprites/spr_flying_eye_fly/spr_flying_eye_fly.yy",},"order":0,},
+    {"id":{"name":"spr_witch_idle","path":"sprites/spr_witch_idle/spr_witch_idle.yy",},"order":2,},
     {"id":{"name":"spr_goblin_death","path":"sprites/spr_goblin_death/spr_goblin_death.yy",},"order":1,},
     {"id":{"name":"getXYDiffFromFirePointAndAngle","path":"scripts/getXYDiffFromFirePointAndAngle/getXYDiffFromFirePointAndAngle.yy",},"order":3,},
     {"id":{"name":"spr_turrent","path":"sprites/spr_turrent/spr_turrent.yy",},"order":1,},

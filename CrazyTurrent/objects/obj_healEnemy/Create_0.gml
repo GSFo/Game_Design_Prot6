@@ -5,5 +5,6 @@
 event_inherited();
 
 death_sprite_index = spr_witch_death;
+idle_sprite_index = spr_witch_idle;
 
 alarm[11] = room_speed; 
