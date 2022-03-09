@@ -57,19 +57,26 @@ if triggered && (ds_list_empty(enemyLst)) && timer>10{
 
 if (!triggered){
 	if (!interwaveEventHappened){
+		drawCardChances += 2;
+		drawCardTrigger = true;
 		interwaveEventHappened = true;
 		obj_turrent.life += obj_turrent.maxLife/2;
-		buttons = [0,0,0,0]
-		for (i =0;i<4;++i){
-			var _attributeIndex = irandom_range(0,array_length(obj_turrent.skillLv)+3);
-			buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 300,_attributeIndex);
-		}
+		
 		bg_num = irandom(4);
 		currentBuff = irandom(3);
 		while (bg_num == pre_bg_num) {
 			bg_num = irandom(4);
 		}
 		alarm[1] = room_speed
+	}
+}
+
+if (drawCardChances>0 && drawCardTrigger){
+	drawCardTrigger = false;
+	buttons = [0,0,0,0]
+	for (i =0;i<4;++i){
+		var _attributeIndex = irandom_range(0,array_length(obj_turrent.skillLv)+3);
+		buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 300,_attributeIndex);
 	}
 }
 

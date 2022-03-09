@@ -25,4 +25,6 @@ if (click){
 	for (var i =0; i<array_length(obj_spawner.buttons);++i){
 		instance_destroy(obj_spawner.buttons[i]);
 	}
+	obj_spawner.drawCardChances --;
+	obj_spawner.drawCardTrigger = true;
 }

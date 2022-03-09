@@ -54,6 +54,9 @@ buffText = ["All-Round", "Deadly", "Body Enhancement", "Agility"]
 //currBGM=-1;
 enemyLst = ds_list_create();
 
+drawCardChances = 0;
+drawCardTrigger = false;
+
 bg_layer = layer_create(399);
 bg_element = layer_background_create(bg_layer, bg1);
 
