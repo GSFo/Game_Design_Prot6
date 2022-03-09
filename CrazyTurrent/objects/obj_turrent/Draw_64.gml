@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 if (guiHideButton.val == 1){
+draw_set_font(UIFonts_Large);
 var _lineInterval = 40;
 var _startFromHeight = 280;
 
@@ -14,7 +15,8 @@ draw_set_valign(fa_top)
 draw_set_color(c_black)
 draw_set_alpha(1)
 for (var _attributeIndex = 0; _attributeIndex<array_length(obj_turrent.skillLv)+4;++_attributeIndex){
-	draw_text_transformed(10,_startFromHeight+_lineInterval*_attributeIndex,attributeName[_attributeIndex],1.5,1.5,0)
+	draw_text(10,_startFromHeight+_lineInterval*_attributeIndex,attributeName[_attributeIndex]);
+	//draw_text_transformed(10,_startFromHeight+_lineInterval*_attributeIndex,attributeName[_attributeIndex],1.5,1.5,0)
 	switch (_attributeIndex){
 		case 0:
 			var _val = damage;
@@ -36,7 +38,8 @@ for (var _attributeIndex = 0; _attributeIndex<array_length(obj_turrent.skillLv)+
 				throw("Skill Index Out Of Bound!");
 			}
 	}
-	draw_text_transformed(220,_startFromHeight+_lineInterval*_attributeIndex,_val,1.5,1.5,0);
+	draw_text(220,_startFromHeight+_lineInterval*_attributeIndex,_val);
+	//draw_text_transformed(220,_startFromHeight+_lineInterval*_attributeIndex,_val,1.5,1.5,0);
 }
 }
 

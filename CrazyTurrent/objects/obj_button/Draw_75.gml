@@ -1,3 +1,4 @@
+draw_set_font(UIFonts);
 if (!hide){
 	if (cdPercent<=0){		
 		draw_set_color(merge_color(c_ltgray,c_white,hoverTime));
@@ -12,10 +13,13 @@ if (!hide){
 	draw_set_color(c_black);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
+	
 	if (!drawVal){
-		draw_text_transformed(x+width/2, y+height/2, text,1.3,1.3,0);
+		draw_text(x+width/2, y+height/2, text);
+		//draw_text_transformed(x+width/2, y+height/2, text,1.3,1.3,0);
 	}
 	else{
+		draw_text(x+width/2, y+height/2, text+string(round(val)));
 		draw_text_transformed(x+width/2, y+height/2, text+string(round(val)),1.3,1.3,0);
 	}	
 	draw_set_halign(fa_middle);
