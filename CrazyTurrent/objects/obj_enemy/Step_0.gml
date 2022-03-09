@@ -12,7 +12,6 @@ if (obj_turrent.x < x) {
 
 
 //handle buffs
-
 //frost
 image_blend = c_white;
 if (alarm[0]>0){

@@ -9,6 +9,6 @@ var _x1 = x + x_offset;
 var _y1 = y + y_offset;
 var _x2 = _x1 + _width;
 var _y2 = _y1 + _height;
-var _health_length = life / life_max * _width;
+var _health_length = life / life_max * 100;
 
 draw_healthbar(_x1, _y1, _x2, _y2, _health_length, c_black, c_red, c_lime, 0, true, true)

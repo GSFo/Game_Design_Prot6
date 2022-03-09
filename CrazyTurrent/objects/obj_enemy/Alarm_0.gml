@@ -1,0 +1,1 @@
+frostDebuff = 0;
