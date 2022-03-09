@@ -15,6 +15,12 @@ if (triggered) {
 				life *= difficulty;
 				life_max *= difficulty;
 				switch (other.currentBuff){
+					case 0:
+						attackDamage *= 1.1;
+						defense *= 1.1;
+						life_max *= 1.1;
+						life *= 1.1;
+						move_speed *= 1.1;
 					case 1:
 						attackDamage *=1.5;
 						break;

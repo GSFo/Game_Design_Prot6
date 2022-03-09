@@ -50,7 +50,7 @@ spawn[2,0] = 200;
 spawn[2,1] = 300;
 
 currentBuff = 0;
-buffText = ["Normal", "Deadly", "Body Enhancement", "Agility"]
+buffText = ["All-Round", "Deadly", "Body Enhancement", "Agility"]
 //currBGM=-1;
 enemyLst = ds_list_create();
 
