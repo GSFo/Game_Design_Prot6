@@ -4,9 +4,11 @@
 function createPowerUpButton(_text, _val, _x, _y,_attributeIndex){
 	button = instance_create_layer(_x,_y,"Instances",obj_powerUpButton)
 	with (button){
-		width = 100;
+		width = 125;
 		height = 150;
 		text = _text;
+		depth = 999;
+		drawVal = false;
 		show_debug_message(text)
 		//auto new line
 		//var lineNumber = round(width*.8/string_width(_text)-.49);

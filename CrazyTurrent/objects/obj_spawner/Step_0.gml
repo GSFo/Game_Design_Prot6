@@ -55,10 +55,10 @@ if triggered && (ds_list_empty(enemyLst)) && timer>10{
 if (!triggered){
 	if (!interwaveEventHappened){
 		interwaveEventHappened = true;
-		buttons = [0,0,0,0,0]
+		buttons = [0,0,0,0]
 		for (i =0;i<4;++i){
 			var _attributeIndex = irandom_range(0,array_length(obj_turrent.skillLv)+3);
-			buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 400,_attributeIndex);
+			buttons[i] = createPowerUpButton( obj_turrent.attributeBufferName[_attributeIndex],1,window_get_width()/2-275+i*150, 300,_attributeIndex);
 		}
 		bg_num = irandom(4);
 		currentBuff = irandom(3);
