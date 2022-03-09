@@ -22,13 +22,13 @@ for (var _attributeIndex = 0; _attributeIndex<array_length(obj_turrent.skillLv)+
 			var _val = damage;
 		break;
 		case 1:
-			_val = defense;
+			_val = attackSpd;
 		break;
 		case 2:
 			_val = range;
 		break;
 		case 3:
-			_val = attackSpd;
+			_val = defense;
 		break;
 		default:
 			if (_attributeIndex-4<array_length(skillLv)){

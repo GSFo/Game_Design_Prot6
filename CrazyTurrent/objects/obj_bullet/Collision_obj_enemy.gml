@@ -38,6 +38,7 @@ if (ds_list_find_index(hitTargetLst,other.id)==-1){
 			var _lightningRenderer = instance_create_layer(0,0,"Projectiles",obj_lightningRenderer);
 			ds_list_add(_enemyOnChain,other);
 			ds_list_add(_lightningRenderer.lightningVertex, [other.x,other.y])
+			other.life -= chainLightningLv*5 + 5;
 			for (var _bouncingTime =0; _bouncingTime<chainLightningLv;++_bouncingTime){
 				//find closest enemy
 				var _currEnemy = other;

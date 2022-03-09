@@ -2,7 +2,7 @@
 
 
 if (triggered) {
-	var difficulty = obj_spawner.current_wave + 5
+	var difficulty = obj_spawner.current_wave/5 + 1
 	for (var i = last; i < ds_list_size(waves); i++) {
 		var next = ds_list_find_value(waves, i);
 		if (next[_WAVE] == current_wave) && (next[_DELAY] < timer) {
@@ -58,6 +58,7 @@ if triggered && (ds_list_empty(enemyLst)) && timer>10{
 if (!triggered){
 	if (!interwaveEventHappened){
 		interwaveEventHappened = true;
+		obj_turrent.life += obj_turrent.maxLife/2;
 		buttons = [0,0,0,0]
 		for (i =0;i<4;++i){
 			var _attributeIndex = irandom_range(0,array_length(obj_turrent.skillLv)+3);

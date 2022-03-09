@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description melee attack
 // You can write your code in this editor
 
 if (distance_to_object(obj_turrent) < stopDistance + 64)

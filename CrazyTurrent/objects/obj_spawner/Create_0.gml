@@ -24,7 +24,7 @@ for (var i = 0; i < array_length(enemyTypeArr); ++i){
 
 for (i=0;i<10;++i){
 	ds_list_shuffle(enemyTypeIndexLst);
-	var _enemyBaseNumber = 10+i*3;
+	var _enemyBaseNumber = 5+i*2;
 	var _enemyInterval = 4/(_enemyBaseNumber-1);
 	var _enemyTypeNumber = irandom_range(1,3)
 	var _currEnemyTypes = ds_list_create();
@@ -42,12 +42,12 @@ for (i=0;i<10;++i){
 }
 
 //spawn points setting
-spawn[0,0] = 150;
+spawn[0,0] = 250;
 spawn[0,1] = 700;
-spawn[1,0] = 300;
+spawn[1,0] = 325;
 spawn[1,1] = 500;
-spawn[2,0] = 200;
-spawn[2,1] = 300;
+spawn[2,0] = 400;
+spawn[2,1] = 400;
 
 currentBuff = 0;
 buffText = ["All-Round", "Deadly", "Body Enhancement", "Agility"]

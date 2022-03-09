@@ -6,7 +6,6 @@ if (!triggered) {
 	draw_set_color(c_ltgray)
 	draw_set_alpha(.7)
 	draw_rectangle(155,180,650,250,false)
-	 
 	draw_set_color(c_black)
 	draw_set_alpha(1)
 	draw_set_halign(fa_middle)
