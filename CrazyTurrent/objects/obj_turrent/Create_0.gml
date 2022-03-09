@@ -10,7 +10,6 @@ attributeName = ["Attack","Attack Speed", "Range", "Defense",
 	,"Frost Attack","Poison Attack","Damage Ampli","Burn Attack"]
 life = maxLife;
 
-
 guiHideButton = createButton("-",1,10,920,40,40)
 with guiHideButton{
 	drawVal = false;

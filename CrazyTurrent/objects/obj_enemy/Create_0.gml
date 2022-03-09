@@ -1,5 +1,4 @@
 /// @desc
-
 move_speed = 1; 
 
 speed = move_speed;

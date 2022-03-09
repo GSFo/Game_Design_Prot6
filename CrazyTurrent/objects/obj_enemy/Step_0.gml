@@ -1,6 +1,4 @@
 /// @desc
-
-
 move_towards_point(obj_turrent.x, obj_turrent.y, speed);
 // ===== flip enemy sprite based on player movement =====
 if (obj_turrent.x < x) {
@@ -15,7 +13,7 @@ if (obj_turrent.x < x) {
 //frost
 image_blend = c_white;
 if (alarm[0]>0){
-	speed = move_speed/ power(.8,frostDebuff);
+	speed = move_speed* power(.8,frostDebuff);
 	show_debug_message("inflicted frost")
 	image_blend = c_blue;
 }
