@@ -16,32 +16,41 @@ alarm[1]=-1;
 randomize();
 waves = ds_list_create();
 // list: [wave number, spawn_type, spawn_location.x,delay_time]
-var _enemieTypeArr = [obj_enemy,obj_enemyFast,obj_healEnemy,obj_rangedEnemy,obj_tankyEnemy];
-enemyTypeLst = ds_list_create();
-for (var i = 0; i < array_length(_enemieTypeArr); ++i){
-	ds_list_add(enemyTypeLst,_enemieTypeArr[i])
+enemyTypeArr = [obj_enemy,obj_tankyEnemy,obj_enemyFast,obj_healEnemy,obj_rangedEnemy];
+enemyTypeIndexLst = ds_list_create();
+for (var i = 0; i < array_length(enemyTypeArr); ++i){
+	ds_list_add(enemyTypeIndexLst, i)
 }
 
 for (i=0;i<10;++i){
-	ds_list_shuffle(enemyTypeLst);
-	var _enemyNumber = 10+i*3;
-	var _enemyInterval = 4/(_enemyNumber-1);
+	ds_list_shuffle(enemyTypeIndexLst);
+	var _enemyBaseNumber = 5+i*2;
+	var _enemyInterval = 4/(_enemyBaseNumber-1);
 	var _enemyTypeNumber = irandom_range(1,3)
-	for (var j=0; j<_enemyNumber; ++j){
-		ds_list_add(waves, [i,ds_list_find_value(enemyTypeLst,j%_enemyTypeNumber),j%_enemyTypeNumber, _enemyInterval*j]);
+	var _currEnemyTypes = ds_list_create();
+	for (var j = 0; j<_enemyTypeNumber; ++j){
+		ds_list_add(_currEnemyTypes,ds_list_find_value(enemyTypeIndexLst,j))
+	}
+	ds_list_sort(_currEnemyTypes, true);
+	for (var j=0; j<_enemyBaseNumber; ++j){
+		var _currEnemy = enemyTypeArr[ds_list_find_value(_currEnemyTypes,j%_enemyTypeNumber)];
+		if (_currEnemy == obj_enemy){
+			ds_list_add(waves, [i,_currEnemy,j%_enemyTypeNumber, _enemyInterval*j]);
+		}
+		ds_list_add(waves, [i,_currEnemy,j%_enemyTypeNumber, _enemyInterval*j]);
 	}
 }
 
 //spawn points setting
-spawn[0,0] = 100;
-spawn[0,1] = 400;
-spawn[1,0] = 300;
-spawn[1,1] = 900;
-spawn[2,0] = 200;
-spawn[2,1] = 600;
+spawn[0,0] = 250;
+spawn[0,1] = 700;
+spawn[1,0] = 325;
+spawn[1,1] = 500;
+spawn[2,0] = 400;
+spawn[2,1] = 400;
 
 currentBuff = 0;
-buffText = ["Normal", "Deadly", "Body Enhancement", "Agility"]
+buffText = ["All-Round", "Deadly", "Body Enhancement", "Agility"]
 //currBGM=-1;
 enemyLst = ds_list_create();
 

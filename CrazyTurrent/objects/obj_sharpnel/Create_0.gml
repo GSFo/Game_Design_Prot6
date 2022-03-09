@@ -3,7 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-
-if (distance_to_object(obj_turrent)<=400){
-	speed =0;
-}
+alarm[11] = 3*room_speed;

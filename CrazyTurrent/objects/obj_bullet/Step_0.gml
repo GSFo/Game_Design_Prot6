@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-range-=spd*delta_time/10000;
+range-=speed*delta_time/10000;
 image_angle = direction-90;
 x+=delta_time/1000000*chaosX;
 y+=delta_time/1000000*chaosY;

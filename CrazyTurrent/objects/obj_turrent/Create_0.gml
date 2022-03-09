@@ -1,6 +1,6 @@
 /// @description initial skill levels
 // You can write your code in this editor
-skillLv = [0,0,0,0,0,0,5,0,
+skillLv = [0,0,0,0,0,0,0,0,
 	0,0,0,0]
 attributeBufferName = ["Attack Boost","Attack Speed Boost","Range Boost","Defense Boost",
 	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
@@ -14,3 +14,5 @@ guiHideButton = createButton("-",1,10,920,40,40)
 with guiHideButton{
 	drawVal = false;
 }
+
+bodySprite = spr_body;

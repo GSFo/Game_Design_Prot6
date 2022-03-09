@@ -22,7 +22,6 @@
     {"id":{"name":"obj_enemyFast","path":"objects/obj_enemyFast/obj_enemyFast.yy",},"order":4,},
     {"id":{"name":"bg5","path":"sprites/bg5/bg5.yy",},"order":4,},
     {"id":{"name":"spr_ghostBullet","path":"sprites/spr_ghostBullet/spr_ghostBullet.yy",},"order":8,},
-    {"id":{"name":"obj_laserBoomerang","path":"objects/obj_laserBoomerang/obj_laserBoomerang.yy",},"order":0,},
     {"id":{"name":"UIFonts","path":"fonts/UIFonts/UIFonts.yy",},"order":0,},
     {"id":{"name":"GUIHover","path":"scripts/GUIHover/GUIHover.yy",},"order":2,},
     {"id":{"name":"obj_tankyEnemy","path":"objects/obj_tankyEnemy/obj_tankyEnemy.yy",},"order":1,},
