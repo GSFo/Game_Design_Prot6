@@ -20,7 +20,7 @@ for (i=0;i<10;++i){
 	enemyNumber = 10+i*3;
 	enemyInterval = 4/(enemyNumber-1);
 	for (j=0; j<enemyNumber; ++j){
-		ds_list_add(waves, [i,obj_enemy,j%3, enemyInterval*j]);
+		ds_list_add(waves, [i,obj_enemyFast,j%3, enemyInterval*j]);
 	}
 }
 
