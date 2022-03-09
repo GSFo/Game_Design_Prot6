@@ -9,3 +9,9 @@ attributeName = ["Attack","Attack Speed", "Range", "Defense",
 	"Homing Attack","Shrapnel","Scatter Shot","Accuracy","Critical Shot","Chaos Amplifier","Chain Lightning","Piercing Bullet"
 	,"Frost Attack","Poison Attack","Damage Ampli","Burn Attack"]
 life = maxLife;
+
+
+guiHideButton = createButton("-",1,10,920,40,40)
+with guiHideButton{
+	drawVal = false;
+}
