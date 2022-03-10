@@ -13,3 +13,8 @@ if (guiHideButton.click){
 		guiHideButton.text = "+";
 	}
 }
+
+if play_bgm {
+	play_bgm = false;
+	audio_play_sound(bgm, 10, true);
+}

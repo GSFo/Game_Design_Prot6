@@ -16,3 +16,4 @@ with guiHideButton{
 }
 
 bodySprite = spr_body;
+play_bgm = true;

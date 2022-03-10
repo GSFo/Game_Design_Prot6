@@ -1,6 +1,7 @@
 /// @description shoot
 // You can write your code in this editor
 if (alarm[0]<=0){
+	audio_play_sound(shoot, 10, false);
 	//chaos amplifier
 	var _firePointX = firePointX;
 	var _firePointY = firePointY;

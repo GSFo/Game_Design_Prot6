@@ -27,6 +27,9 @@ if (alarm[3]>0){
 	image_blend = c_red;
 	damage = attackDamage/2;
 }
+if (alarm[0] > 0 or alarm[1] > 0 or alarm[3] > 0){
+	audio_play_sound(debuff, 10, false);
+}
 
 //damage amplification
 if (alarm[2]>0){
