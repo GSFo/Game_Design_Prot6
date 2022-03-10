@@ -18,3 +18,8 @@ if play_bgm {
 	play_bgm = false;
 	audio_play_sound(bgm, 10, true);
 }
+
+if life <= 0 {
+	room_goto(RoomEnd);
+	audio_pause_sound(bgm);
+}

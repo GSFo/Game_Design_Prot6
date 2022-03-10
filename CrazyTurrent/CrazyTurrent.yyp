@@ -53,9 +53,11 @@
     {"id":{"name":"obj_rangedEnemy","path":"objects/obj_rangedEnemy/obj_rangedEnemy.yy",},"order":2,},
     {"id":{"name":"bg3","path":"sprites/bg3/bg3.yy",},"order":2,},
     {"id":{"name":"spr_turrent_shoot","path":"sprites/spr_turrent_shoot/spr_turrent_shoot.yy",},"order":0,},
+    {"id":{"name":"RoomEnd","path":"rooms/RoomEnd/RoomEnd.yy",},"order":1,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":1,},
     {"id":{"name":"obj_enemyCloseup","path":"objects/obj_enemyCloseup/obj_enemyCloseup.yy",},"order":6,},
     {"id":{"name":"spr_mushroom_death","path":"sprites/spr_mushroom_death/spr_mushroom_death.yy",},"order":2,},
+    {"id":{"name":"obj_game_end","path":"objects/obj_game_end/obj_game_end.yy",},"order":7,},
     {"id":{"name":"obj_sharpnel","path":"objects/obj_sharpnel/obj_sharpnel.yy",},"order":2,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":0,},
     {"id":{"name":"spr_turrent_draft","path":"sprites/spr_turrent_draft/spr_turrent_draft.yy",},"order":0,},
@@ -83,6 +85,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"RoomEnd","path":"rooms/RoomEnd/RoomEnd.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
