@@ -49,7 +49,7 @@ if (triggered) {
 	*/
 }
 
-if triggered && (ds_list_empty(enemyLst)) && timer>10{
+if triggered && (ds_list_empty(enemyLst)) && timer>5{
 	triggered = false;
 	current_wave += 1;
 	timer = 0

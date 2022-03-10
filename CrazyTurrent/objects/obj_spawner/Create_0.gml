@@ -22,7 +22,7 @@ for (var i = 0; i < array_length(enemyTypeArr); ++i){
 	ds_list_add(enemyTypeIndexLst, i)
 }
 
-for (i=0;i<20;++i){
+for (i=0;i<100;++i){
 	ds_list_shuffle(enemyTypeIndexLst);
 	var _enemyBaseNumber = 5+i*2;
 	var _enemyInterval = 4/(_enemyBaseNumber-1);
